@@ -9,9 +9,9 @@ const sequelize = require('./config/database');
 const Task = require('./models/task');
 
 sequelize.sync().then(() => {
-  console.log('✅ Database synchronized');
+  console.log(' Database synchronized');
 }).catch((err) => {
-  console.error('❌ Database sync failed:', err);
+  console.error('Database sync failed:', err);
 });
 
 const app = express();
