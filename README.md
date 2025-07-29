@@ -4,6 +4,10 @@
 
 A simple Node.js API for managing tasks using MySQL and Sequelize.
 
+# Kanban Link
+
+https://github.com/users/manonclair/projects/2/
+
 ## How to Run the Project
 
 ### 1. Clone the repository
