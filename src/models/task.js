@@ -9,7 +9,10 @@ const Task = sequelize.define('Task', {
   },
   title: {
     type: DataTypes.STRING,
-    allowNull: false 
+    allowNull: false,
+    validate: {
+      notEmpty: { msg: 'Title is required' }
+    }
   },
   description: {
     type: DataTypes.TEXT,
@@ -17,7 +20,10 @@ const Task = sequelize.define('Task', {
   },
   status: {
     type: DataTypes.STRING,
-    allowNull: false    
+    allowNull: false,
+    validate: {
+      notEmpty: { msg: 'Status is required' }
+    }
   }
 }, {
   timestamps: true  
